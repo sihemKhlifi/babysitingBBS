@@ -59,7 +59,7 @@ public  class CandidatServiceImpl implements CandidatService {
 		
 		
 		
-		exist=utilisateurRepository.existsByLoginAndById(candidat.getLogin(),candidat.getId());
+		exist=utilisateurRepository.existsByLoginAndId(candidat.getLogin(),candidat.getId());
 		if(!exist) {
 			exist=utilisateurRepository.existsByLogin(candidat.getLogin());
 		}

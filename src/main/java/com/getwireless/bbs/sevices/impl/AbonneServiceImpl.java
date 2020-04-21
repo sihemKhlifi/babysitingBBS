@@ -59,7 +59,7 @@ public class AbonneServiceImpl implements AbonneService {
 		
 		
 		
-		exist=utilisateurRepository.existsByLoginAndById(abonne.getLogin(),abonne.getId());
+		exist=utilisateurRepository.existsByLoginAndId(abonne.getLogin(),abonne.getId());
 		if(!exist) {
 			exist=utilisateurRepository.existsByLogin(abonne.getLogin());
 		}
